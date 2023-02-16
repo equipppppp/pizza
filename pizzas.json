@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "name": "Домашняя",
+    "price": [500, 650, 800],
+    "imageURL": "https://dodopizza-a.akamaihd.net/static/Img/Products/1737ebbfb03148a291f8b3060cd9f0a1_292x292.webp",
+    "types": [0, 1],
+    "sizes": [25, 30, 35],
+    "category": [0, 1],
+    "rating": 8
+  },
+  {
+    "id": "2",
+    "name": "Четыре сыра",
+    "price": [450, 600, 750],
+    "imageURL": "https://dodopizza-a.akamaihd.net/static/Img/Products/50555f951a6d4fd4ac0088c099eb3769_292x292.webp",
+    "types": [0, 1],
+    "sizes": [25, 30, 35],
+    "category": [0, 2],
+    "rating": 7
+  },
+  {
+    "id": "3",
+    "name": "Мясная",
+    "price": [550, 700, 850],
+    "imageURL": "https://dodopizza-a.akamaihd.net/static/Img/Products/18dbb12240b041a191c9dc73c9c1f4ef_292x292.webp",
+    "types": [0, 1],
+    "sizes": [25, 30, 35],
+    "category": [0, 1],
+    "rating": 6
+  },
+  {
+    "id": "4",
+    "name": "Ветчина и грибы",
+    "price": [475, 625, 775],
+    "imageURL": "https://dodopizza-a.akamaihd.net/static/Img/Products/0c24c7c195574d7cae45c889bd8043fc_292x292.webp",
+    "types": [0, 1],
+    "sizes": [25, 30, 35],
+    "category": [0, 1],
+    "rating": 5
+  },
+  {
+    "id": "5",
+    "name": "Овощи и грибы",
+    "price": [425, 575, 725],
+    "imageURL": "https://dodopizza-a.akamaihd.net/static/Img/Products/d6c9f93ea37649ac923e9586c034a5a0_292x292.webp",
+    "types": [0, 1],
+    "sizes": [25, 30, 35],
+    "category": [0, 2],
+    "rating": 6.5
+  },
+  {
+    "id": "6",
+    "name": "Пепперони",
+    "price": [400, 550, 700],
+    "imageURL": "https://dodopizza-a.akamaihd.net/static/Img/Products/fb9cc5b8ff2e47bdbcbdcb5930cddf06_292x292.webp",
+    "types": [0, 1],
+    "sizes": [25, 30, 35],
+    "category": [0, 1],
+    "rating": 7.5
+  },
+  {
+    "id": "7",
+    "name": "Сырный цыпленок",
+    "price": [525, 675, 825],
+    "imageURL": "https://dodopizza-a.akamaihd.net/static/Img/Products/42360a7dcb7640c998b723231586fe84_292x292.webp",
+    "types": [0, 1],
+    "sizes": [25, 30, 35],
+    "category": [0, 1],
+    "rating": 8.5
+  },
+  {
+    "id": "8",
+    "name": "Цыпленок карри",
+    "price": [575, 725, 875],
+    "imageURL": "https://dodopizza-a.akamaihd.net/static/Img/Products/c8ac7d2eb95b4bd0b8bc2f366415896c_292x292.webp",
+    "types": [0, 1],
+    "sizes": [25, 30, 35],
+    "category": [0, 1, 3],
+    "rating": 7
+  }
+]

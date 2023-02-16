@@ -1,0 +1,250 @@
+.sortContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 820px) {
+    flex-direction: column;
+  }
+
+  ul {
+    display: flex;
+    gap: 20px;
+    @media (max-width: 520px) {
+      font-size: 0.8rem;
+    }
+    @media (max-width: 400px) {
+      font-size: 0.6rem;
+    }
+    .values {
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      height: 46px;
+      background: #f9f9f9;
+      border-radius: 30px;
+      font-weight: 700;
+      cursor: pointer;
+      @media (max-width: 520px) {
+        padding: 0 10px;
+        height: 36px;
+        border-radius: 20px;
+      }
+    }
+    .active {
+      background: black;
+      color: white;
+    }
+  }
+  .sortByCriterion {
+    position: relative;
+    width: 205px;
+    @media (max-width: 820px) {
+      margin-top: 15px;
+    }
+    span {
+      text-decoration: underline;
+      color: #fe5f1e;
+      cursor: pointer;
+    }
+    .popup {
+      top: 30px;
+      left: 50px;
+      position: absolute;
+      padding: 5px 10px;
+      border-radius: 10px;
+      border: 2px solid;
+      background-color: rgb(240, 240, 240);
+      .popupElem {
+        display: flex;
+        width: 130px;
+        height: 35px;
+        align-items: center;
+        cursor: pointer;
+      }
+      .active {
+        background: rgba(254, 95, 30, 0.05);
+        color: #fe5f1e;
+      }
+    }
+  }
+}
+
+.pizzas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  font-weight: 700;
+  .img {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: width;
+  }
+  h2 {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .info {
+    width: 100%;
+    height: 80px;
+    background: #f3f3f3;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    .dough {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 50%;
+      text-align: center;
+      align-items: center;
+      cursor: pointer;
+      .active {
+        display: flex;
+        margin: 0 auto;
+        width: 90%;
+        height: 80%;
+        background: #ffffff;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        color: black;
+      }
+    }
+    .size {
+      display: grid;
+      height: 50%;
+      text-align: center;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
+      cursor: pointer;
+      .active {
+        display: flex;
+        margin: 0 auto;
+        width: 80%;
+        height: 80%;
+        background: #ffffff;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        color: black;
+      }
+    }
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 60px 1fr 1fr;
+    gap: 5px;
+    align-items: center;
+    height: 40px;
+    .price {
+      font-size: 1.25em;
+    }
+    .quantity {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      svg {
+        height: 30px;
+        width: 30px;
+        &:hover {
+          circle {
+            fill: #eb5a1e;
+          }
+          rect {
+            fill: white;
+          }
+        }
+      }
+      span {
+        width: 20px;
+        text-align: center;
+        margin: 0 5px;
+        font-size: 1.25em;
+      }
+    }
+    .btn {
+      height: 100%;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      background: #ffffff;
+      border: 1px solid #eb5a1e;
+      border-radius: 30px;
+      font-weight: 700;
+      color: #eb5a1e;
+      cursor: pointer;
+      &:hover {
+        background-color: #fe5f1e;
+        color: white;
+      }
+    }
+  }
+  .disabled {
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .card {
+    h2 {
+      font-size: 2rem;
+    }
+    .info .dough,
+    .size {
+      font-size: 1.5rem;
+    }
+    .footer {
+      height: 50px;
+      .price {
+        font-size: 1.5rem;
+      }
+      .btn {
+        font-size: 1.5rem;
+      }
+      .quantity {
+        span {
+          font-size: 1.5rem;
+        }
+        svg {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  .card {
+    h2 {
+      font-size: 1.5rem;
+    }
+    .info .dough,
+    .size {
+      font-size: 1rem;
+    }
+    .footer {
+      height: 40px;
+      .price {
+        font-size: 1rem;
+      }
+      .btn {
+        font-size: 1rem;
+      }
+      .quantity {
+        span {
+          font-size: 1rem;
+        }
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}

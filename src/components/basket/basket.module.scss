@@ -1,0 +1,169 @@
+.container {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  img {
+    width: 20%;
+    cursor: pointer;
+  }
+}
+.itemContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-top: 1px solid #f4f4f4;
+}
+.item {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  img {
+    width: 25%;
+    height: width;
+    margin-right: 10px;
+  }
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  p {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  span {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+}
+.quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    margin: 0 10px;
+    font-size: 22px;
+  }
+}
+.price {
+  width: 9%;
+  text-align: center;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  .totalQ {
+    font-weight: 700;
+  }
+  .totalP {
+    font-weight: 700;
+    color: #fe5f1e;
+  }
+}
+.empty {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.text {
+  margin: 15px 0;
+  text-align: center;
+  color: #777777;
+}
+.mt10 {
+  display: block;
+  margin: 10px auto;
+}
+.ma {
+  display: block;
+  margin: 0 auto;
+  width: 125px;
+}
+
+svg {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  &:hover {
+    circle {
+      fill: #eb5a1e;
+    }
+    rect {
+      fill: white;
+    }
+  }
+}
+
+button {
+  background: #ffffff;
+  border: 1px solid #eb5a1e;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #eb5a1e;
+  cursor: pointer;
+  &:hover {
+    background-color: #fe5f1e;
+    color: white;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+  .info {
+    p {
+      font-size: 18px;
+    }
+    span {
+      font-size: 14px;
+    }
+  }
+  .quantity {
+    span {
+      font-size: 16px;
+    }
+  }
+  .price {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+  .info {
+    p {
+      font-size: 14px;
+    }
+    span {
+      font-size: 10px;
+    }
+  }
+  .quantity {
+    span {
+      font-size: 12px;
+    }
+  }
+  .price {
+    font-size: 10px;
+  }
+}

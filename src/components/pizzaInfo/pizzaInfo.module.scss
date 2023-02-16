@@ -1,0 +1,56 @@
+.card {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 15px;
+  align-items: center;
+  .img {
+    width: 260px;
+    height: 260px;
+    margin-right: 20px;
+  }
+  h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    span {
+      font-weight: 700;
+      font-size: 25px;
+    }
+    .pizzaInfo {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 20px;
+      .flex {
+        display: flex;
+        align-items: center;
+      }
+      .mr15 {
+        margin-right: 15px;
+      }
+      .mt15 {
+        margin-top: 15px;
+      }
+      ul {
+        display: flex;
+        flex-direction: row;
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 50px;
+          height: 25px;
+          border: 1px solid;
+          border-radius: 5px;
+          margin-right: 10px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
