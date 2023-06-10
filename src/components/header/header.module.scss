@@ -1,0 +1,71 @@
+@import "../../scss/mixins.scss";
+@import "../../scss/variables.scss";
+
+.header {
+  @include flex(space-between);
+
+  margin-bottom: 50px;
+
+  a {
+    @include flex;
+    gap: 17px;
+
+    .desktopTagline {
+      @media (max-width: 575px) {
+        display: none;
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        @media (max-width: 767px) {
+          font-size: 20px;
+        }
+      }
+      span {
+        color: $mainGrey;
+        @media (max-width: 767px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .basketButton {
+    position: relative;
+    display: flex;
+    .devider {
+      position: absolute;
+      left: 79.5px;
+      top: 12px;
+
+      width: 1px;
+      height: 26px;
+
+      background: rgba(255, 255, 255, 0.5);
+    }
+    .half {
+      @include flex(center);
+      gap: 10px;
+
+      width: 80px;
+      height: 50px;
+
+      font-size: 20px;
+      font-weight: 700;
+
+      color: #ffffff;
+      background-color: $mainOrange;
+    }
+    .left {
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+    }
+    .right {
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+    }
+  }
+}

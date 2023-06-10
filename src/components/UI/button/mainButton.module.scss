@@ -1,0 +1,41 @@
+@import "../../../scss/variables.scss";
+.button {
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+
+  padding: 10px;
+
+  color: $mainOrange;
+  background-color: #fff;
+  border: 2px solid currentColor;
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: $mainOrange;
+    color: white;
+  }
+
+  @media (max-width: 576px) {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.grey {
+  color: $mainGrey;
+  &:hover {
+    color: black;
+    background-color: transparent;
+  }
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}

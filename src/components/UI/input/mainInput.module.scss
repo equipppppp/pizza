@@ -1,0 +1,53 @@
+@mixin outline($color) {
+  outline: 1px solid $color;
+}
+
+.container {
+  position: relative;
+  .label {
+    display: block;
+
+    min-width: 150px;
+    margin-bottom: 5px;
+
+    @media (max-width: 575px), (max-height: 500px) {
+      min-width: auto;
+    }
+
+    .required {
+      color: red;
+    }
+  }
+  .input {
+    display: block;
+
+    width: 100%;
+    height: 30px;
+
+    padding-left: 10px;
+    margin-bottom: 15px;
+
+    border: none;
+    border-radius: 5px;
+    @include outline(#b6b6b6);
+
+    &:focus {
+      @include outline(blue);
+    }
+  }
+  .invalid {
+    @include outline(red);
+    &:focus {
+      @include outline(red);
+    }
+  }
+  .uncorrect {
+    font-size: 12px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    color: red;
+  }
+}

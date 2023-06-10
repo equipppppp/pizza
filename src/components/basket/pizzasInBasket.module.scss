@@ -1,0 +1,71 @@
+@import "../../scss/mixins.scss";
+@import "../../scss/variables.scss";
+
+.container {
+  max-width: 820px;
+  width: 80%;
+  margin: 0 auto;
+
+  @media (max-width: 991px) {
+    width: 90%;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+
+  .header {
+    @include flex(space-between);
+
+    margin-bottom: 15px;
+
+    @media (max-width: 575px) {
+      justify-content: center;
+    }
+
+    .basket {
+      font-size: 32px;
+      font-weight: 700;
+
+      @include flex;
+      gap: 15px;
+
+      @media (max-width: 767px) {
+        font-size: 24px;
+      }
+
+      @media (max-width: 575px) {
+        display: none;
+      }
+    }
+    .clearBasket {
+      @include flex;
+      gap: 7px;
+
+      color: $mainGrey;
+      cursor: pointer;
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+
+  .total {
+    @include flex(space-between);
+    .totalPrice {
+      color: $mainOrange;
+    }
+  }
+
+  .footer {
+    @include flex(space-between);
+
+    margin-top: 30px;
+
+    @media (max-width: 575px) {
+      flex-direction: column-reverse;
+      gap: 20px;
+    }
+  }
+}

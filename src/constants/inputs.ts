@@ -1,0 +1,45 @@
+export const inputs = [
+  {
+    name: "phone",
+    label: "Телефон",
+    type: "tel",
+    placeholder: "8 (___) ___-__-__",
+    required: true,
+    full: true,
+    mask: "8 (999) 999-99-99",
+  },
+  {
+    name: "city",
+    label: "Город",
+    type: "text",
+    placeholder: "Москва",
+    required: true,
+  },
+  {
+    name: "street",
+    label: "Улица",
+    type: "text",
+    placeholder: "Название улицы",
+    required: true,
+  },
+  {
+    name: "home",
+    label: "Дом",
+    type: "text",
+    placeholder: "Номер дома",
+    required: true,
+  },
+  {
+    name: "flat",
+    label: "Квартира",
+    type: "number",
+    placeholder: "Номер квартиры",
+  },
+  {
+    name: "comment",
+    label: "Комментарий к доставке",
+    type: "text",
+    placeholder: "Есть особенные пожелания?",
+    full: true,
+  },
+];

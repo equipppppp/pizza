@@ -1,0 +1,117 @@
+@import "../../scss/mixins.scss";
+.card {
+  font-weight: 700;
+
+  min-width: 300px;
+  width: 100%;
+
+  @media (max-width: 767px) {
+    @include flex;
+    min-width: auto;
+  }
+
+  .imgBlock {
+    margin-bottom: 15px;
+    text-align: center;
+
+    @media (max-width: 767px) {
+      flex-basis: 30%;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 400px) {
+      flex-basis: 20%;
+    }
+
+    .img {
+      width: 100%;
+    }
+
+    .desktopeName {
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+
+  .valuesBlock {
+    @media (max-width: 767px) {
+      flex-grow: 1;
+    }
+    .mobileName {
+      display: none;
+      @media (max-width: 767px) {
+        font-size: 20px;
+        text-align: center;
+
+        display: block;
+
+        margin-bottom: 5px;
+      }
+    }
+
+    .values {
+      margin-bottom: 10px;
+
+      background: #f3f3f3;
+      border-radius: 10px;
+
+      @media (max-width: 400px) {
+        margin-bottom: 5px;
+      }
+
+      .valueContainer {
+        display: flex;
+
+        height: 40px;
+        padding: 5px 10px;
+
+        &:first-child {
+          padding: 5px 10px 2.5px 10px;
+        }
+        &:last-child {
+          padding: 2.5px 10px 5px 10px;
+        }
+        @media (max-width: 400px) {
+          height: 30px;
+        }
+      }
+
+      .item {
+        @include flex(center);
+
+        width: 100%;
+
+        cursor: pointer;
+
+        @media (max-width: 575px) {
+          font-size: 14px;
+        }
+      }
+
+      .active {
+        background: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+      }
+    }
+  }
+
+  .footer {
+    @include flex(space-between);
+
+    height: 40px;
+
+    .price {
+      font-size: 20px;
+
+      min-width: 60px;
+
+      @media (max-width: 575px) {
+        font-size: 16px;
+
+        min-width: 45px;
+      }
+    }
+  }
+}

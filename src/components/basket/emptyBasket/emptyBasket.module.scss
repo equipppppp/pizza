@@ -1,0 +1,14 @@
+@import "../../../scss/mixins.scss";
+@import "../../../scss/variables.scss";
+.empty {
+  @include flex;
+  flex-direction: column;
+  gap: 15px;
+  .title {
+    text-transform: uppercase;
+  }
+  .text {
+    text-align: center;
+    color: $mainGrey;
+  }
+}

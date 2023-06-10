@@ -1,0 +1,91 @@
+@import "../../../scss/mixins.scss";
+@import "../../../scss/variables.scss";
+
+.sortingWrapper {
+  @include flex(space-between);
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @media (max-width: 575px) {
+    font-size: 12px;
+
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .category {
+    font-weight: 700;
+
+    @include flex;
+
+    height: 46px;
+    padding: 0 20px;
+
+    background: #f9f9f9;
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    @media (max-width: 767px) {
+      border-radius: 20px;
+    }
+
+    @media (max-width: 575px) {
+      height: 36px;
+      padding: 0 10px;
+
+      border-radius: 10px;
+    }
+  }
+
+  .active {
+    background: black;
+    color: white;
+  }
+}
+
+.sortByCriterion {
+  position: relative;
+
+  width: 205px;
+
+  .chosenSort {
+    color: $mainOrange;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .popup {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+
+    padding: 5px 10px;
+
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+
+    .popupElem {
+      @include flex;
+
+      width: 130px;
+      height: 35px;
+
+      cursor: pointer;
+    }
+    .active {
+      background: rgba(254, 95, 30, 0.05);
+      color: $mainOrange;
+    }
+  }
+}
